@@ -1,0 +1,155 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="87D2733C-9B41-5779-1F72-5C2F4960CA12" name="vehicle">
+<createdBy>eggeek</createdBy>
+<createdTime>2016-05-25 13:06:09 UTC</createdTime>
+<generatorID>F123E006-CD6D-F34D-8AF1-1B977F74EBE1</generatorID>
+<ownerDesignName>combine</ownerDesignName>
+<importedID>F614AEED-8B4B-E3BF-E571-DB49E3CB0F0E</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="vin" id="3F4B1DD3-CE84-1376-0A20-4A5A040077D5">
+<createdBy>eggeek</createdBy>
+<createdTime>2016-05-25 13:06:09 UTC</createdTime>
+<generatorID>10BF05F8-8571-CD5E-23FD-090315564CD2</generatorID>
+<ownerDesignName>combine</ownerDesignName>
+<importedID>E17739AF-60C0-8E6B-88EC-AF8D303B35BA</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="odometer" id="730E633E-30CA-CCA1-B6EF-76FFB9483DE9">
+<createdBy>eggeek</createdBy>
+<createdTime>2016-05-25 13:06:09 UTC</createdTime>
+<generatorID>2C2F33E4-1813-CD31-F67F-574D513AAAFF</generatorID>
+<ownerDesignName>combine</ownerDesignName>
+<importedID>8D41CCB6-E468-0DC1-0F06-59F64F2F06C3</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>10</dataTypeScale>
+<usesDefaultValue>true</usesDefaultValue>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,,10</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="seat_num" id="43B27040-6E09-2998-3F2C-C78756ABC007">
+<createdBy>eggeek</createdBy>
+<createdTime>2016-05-25 13:06:09 UTC</createdTime>
+<generatorID>B6908F49-138B-2641-C4EF-F1CBB85D6C02</generatorID>
+<ownerDesignName>combine</ownerDesignName>
+<importedID>918732B3-F7E3-5BB6-AC5A-0E0A9691BE27</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>3</dataTypeScale>
+<ownDataTypeParameters>,,3</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="make" id="2088DC6B-1B6B-0301-5708-23EAA706DB29">
+<createdBy>eggeek</createdBy>
+<createdTime>2016-05-25 13:06:09 UTC</createdTime>
+<generatorID>86663E1E-819B-6601-1892-8456F2DC56E7</generatorID>
+<ownerDesignName>combine</ownerDesignName>
+<importedID>28BBB58B-F2A7-5142-4B12-D16E71CBEAFB</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="model" id="F55FF6EC-6759-21B4-2197-D43B1A6BA242">
+<createdBy>eggeek</createdBy>
+<createdTime>2016-05-25 13:06:09 UTC</createdTime>
+<generatorID>3E0640B6-4728-40C2-95D3-6CFFD710D360</generatorID>
+<ownerDesignName>combine</ownerDesignName>
+<importedID>D275454E-F3C8-2B28-EC37-9DB8E235A8CE</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="colour_id" id="A6A9B973-A21C-0DB5-C47A-957FEB8EDAC4">
+<createdBy>eggeek</createdBy>
+<createdTime>2016-05-25 13:06:09 UTC</createdTime>
+<generatorID>9E92CECC-E725-521A-B6A6-D4013225A02A</generatorID>
+<ownerDesignName>combine</ownerDesignName>
+<importedID>C6101510-3836-CFC8-1482-AC437389CA58</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>7</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="46D89D51-DCA0-A63A-45A1-8BE78EA021D2" referredColumn="D33BE890-0802-2356-35D1-352EE7D3287B"/>
+</associations>
+</Column>
+<Column name="rego" id="9E47B586-0A02-42F0-B068-A75E4B44C350">
+<createdBy>eggeek</createdBy>
+<createdTime>2016-05-25 13:06:09 UTC</createdTime>
+<generatorID>F7A0E20D-790A-18C3-6F69-71E798D26755</generatorID>
+<ownerDesignName>combine</ownerDesignName>
+<importedID>06B369CF-1E54-A342-ED03-862981756444</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="availability" id="55957910-B683-C17A-9A22-D9FAC1E0A43B">
+<createdBy>eggeek</createdBy>
+<createdTime>2016-05-26 06:14:47 UTC</createdTime>
+<comment>whether the vehicle is available</comment>
+<ownerDesignName>combine</ownerDesignName>
+<constraintComment>&apos;yes&apos; means available, &apos;no&apos; means in use, &apos;sus&apos; means under maintain or repair</constraintComment>
+<constraintName>chk_vehicle_available</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<usesDefaultValue>true</usesDefaultValue>
+<checkConstraint>
+<implementationDef dbType="Oracle Database 11g" definition="availability in (&apos;yes&apos;, &apos;no&apos;, &apos;sus&apos;)"/>
+</checkConstraint>
+<defaultValue>&apos;yes&apos;</defaultValue>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="55B81014-D639-5170-0736-D92F44ED47DA" name="vehicle_PK">
+<createdBy>eggeek</createdBy>
+<createdTime>2016-05-25 13:06:09 UTC</createdTime>
+<generatorID>E248A401-62B3-3DE4-3926-B81C3FD123C5</generatorID>
+<ownerDesignName>combine</ownerDesignName>
+<importedID>0686A7F2-7C2A-0B2F-8C15-468F9897FEBE</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3F4B1DD3-CE84-1376-0A20-4A5A040077D5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1B090496-8376-FBFC-EC47-328A1C38FDD7" name="vehicle_Colour_FK">
+<createdBy>eggeek</createdBy>
+<createdTime>2016-05-25 13:06:09 UTC</createdTime>
+<generatorID>CDC1D1FB-DD34-D9A1-4970-A970119108E6</generatorID>
+<ownerDesignName>combine</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A6A9B973-A21C-0DB5-C47A-957FEB8EDAC4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E937D8FA-778C-3744-5635-978389DCDE03" name="language_code">
+<createdBy>eggeek</createdBy>
+<createdTime>2016-05-25 13:06:09 UTC</createdTime>
+<generatorID>A9246682-17E2-025D-47F9-A0342498AF63</generatorID>
+<ownerDesignName>combine</ownerDesignName>
+<importedID>EAF8B72D-F9BB-7044-1425-C88DC3B7F532</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ISO6931_code" id="51956C51-0B11-621E-4766-7A950A1B622E">
+<createdBy>eggeek</createdBy>
+<createdTime>2016-05-25 13:06:09 UTC</createdTime>
+<comment>iso6931 code as primary key</comment>
+<generatorID>3C7A55E3-07DA-F113-FAF7-21B865F2D4C3</generatorID>
+<ownerDesignName>combine</ownerDesignName>
+<importedID>04165DBB-07BD-9FB4-4A83-CAF6AC1EC145</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="language" id="A469301F-1704-A1E9-0122-47BB70DA722D">
+<createdBy>eggeek</createdBy>
+<createdTime>2016-05-25 13:06:09 UTC</createdTime>
+<comment>language name</comment>
+<generatorID>DF6AA121-DCE7-1160-E772-DA70939777DD</generatorID>
+<ownerDesignName>combine</ownerDesignName>
+<importedID>5538B28C-9CE9-B3EF-5A2F-7443B6775B94</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F448FFEC-8AEC-97F5-2D79-CC24C02F26A6" name="language_code_PK">
+<createdBy>eggeek</createdBy>
+<createdTime>2016-05-25 13:06:09 UTC</createdTime>
+<generatorID>9393B450-D2CB-3085-69CE-FBFD8ADCDF63</generatorID>
+<ownerDesignName>combine</ownerDesignName>
+<importedID>8045C566-D9F1-D346-7960-5E16A12D10BD</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="51956C51-0B11-621E-4766-7A950A1B622E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="01EB9A76-4141-064F-B5A5-0C7FA040F3C6" name="language_code__UN">
+<createdBy>eggeek</createdBy>
+<createdTime>2016-05-26 00:22:38 UTC</createdTime>
+<ownerDesignName>combine</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A469301F-1704-A1E9-0122-47BB70DA722D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

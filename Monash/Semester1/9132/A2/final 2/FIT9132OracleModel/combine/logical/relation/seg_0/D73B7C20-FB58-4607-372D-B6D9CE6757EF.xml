@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="qualifi_driver_FK" directorySegmentName="seg_0" id="D73B7C20-FB58-4607-372D-B6D9CE6757EF">
+<createdBy>eggeek</createdBy>
+<createdTime>2016-05-25 13:06:09 UTC</createdTime>
+<ownerDesignName>combine</ownerDesignName>
+<importedID>297B0B04-E06A-A322-8804-BCB06CF6C4FD</importedID>
+<engineerTo>
+<item key="E5B38EE0-DA46-42B9-48DD-4CCE0C95A07A" value="true"/>
+</engineerTo>
+<sourcePk>C3963396-F7AD-8B9F-0A18-D62337C128AC</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>has many</nameOnSource>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>3A7B2BFF-297D-B944-31B4-E4F20E62B2E7</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>C268B7AB-7676-DC40-517F-73619DE3D4A2</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

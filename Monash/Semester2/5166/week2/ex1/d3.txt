@@ -1,0 +1,8 @@
+This unit will introduce students to basic computer
+hardware and operating systems software with emphasis
+on the concepts required to understand the low-level and
+internal operations of computer systems. In particular, this
+includes study of data representation, simple digital logic,
+computer organisation including CPU, memory and
+input/output devices, as well as system software and
+operating system concepts.

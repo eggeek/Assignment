@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="booking_Driver_FK" directorySegmentName="seg_0" id="1A6EF5A6-1296-AEB2-99D2-AB80AEAAAFB5">
+<createdBy>eggeek</createdBy>
+<createdTime>2016-05-25 13:06:09 UTC</createdTime>
+<ownerDesignName>combine</ownerDesignName>
+<importedID>50CF3426-C17A-D563-23C2-F62D185967C0</importedID>
+<engineerTo>
+<item key="E5B38EE0-DA46-42B9-48DD-4CCE0C95A07A" value="true"/>
+</engineerTo>
+<sourcePk>C3963396-F7AD-8B9F-0A18-D62337C128AC</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>3A7B2BFF-297D-B944-31B4-E4F20E62B2E7</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>C4B36A0B-467F-4893-FDA2-D1D2D5A11CFB</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

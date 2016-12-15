@@ -1,0 +1,18 @@
+The collection documents have the following properties with regards to the tokenisation rules outlined in FIT5166 Assignment Specification: 
+
+Rule one - The following term is hyphenated across a line break 
+term used : rule-one 
+
+Rule two 
+Email address used : abc@abc.com
+IP address used:  192.168.1.1
+URL used:  https://www.google.com.au
+
+Rule three:  The following term used within single quotation marks or single inverted commas  
+term used: 'Rule three'
+
+Rule four: The following are the terms used for two or more words separated by whitespace Space
+terms used: Rule Number Four
+
+Rule five: the following is the Acronym used
+term used:  N.S.W

@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="AFAFFE13-06E0-56D7-AB51-961AD4827FB5" name="official_languages">
+<createdBy>eggeek</createdBy>
+<createdTime>2016-05-25 13:06:09 UTC</createdTime>
+<ownerDesignName>combine</ownerDesignName>
+<importedID>A67D8161-06A7-FB92-678D-39F09A1DD9D1</importedID>
+<engineerTo>
+<item key="E5B38EE0-DA46-42B9-48DD-4CCE0C95A07A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="official_olympic_id" id="87693BB5-29EF-F63F-CF49-DE0FC9D13D62">
+<createdBy>eggeek</createdBy>
+<createdTime>2016-05-25 13:06:09 UTC</createdTime>
+<comment>the official&apos;s Olympic ID (8 characters), primary key</comment>
+<generatorID>530FC004-6FC9-16C5-CABA-AE23198CF385</generatorID>
+<ownerDesignName>combine</ownerDesignName>
+<importedID>E3F5F775-7D06-8E0E-F478-6A2FC95478CF</importedID>
+<engineerTo>
+<item key="E5B38EE0-DA46-42B9-48DD-4CCE0C95A07A" value="true"/>
+</engineerTo>
+<referedAttribute>E1286442-A50F-8666-3A4D-4F165C0CBFB2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ISO6931_code" id="834C4D2E-8770-56D7-A768-DCE5783760A6">
+<createdBy>eggeek</createdBy>
+<createdTime>2016-05-25 13:06:09 UTC</createdTime>
+<comment>iso6931 code as primary key</comment>
+<generatorID>75907C48-932F-571A-B350-68E3DF892C00</generatorID>
+<ownerDesignName>combine</ownerDesignName>
+<importedID>67C05AFF-009D-4F0E-022E-CE790F20110F</importedID>
+<engineerTo>
+<item key="E5B38EE0-DA46-42B9-48DD-4CCE0C95A07A" value="true"/>
+</engineerTo>
+<referedAttribute>3C7A55E3-07DA-F113-FAF7-21B865F2D4C3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1DF46DF0-359C-5C5B-41FF-88103305085C" name="official_lang_PK">
+<createdBy>eggeek</createdBy>
+<createdTime>2016-05-25 13:06:09 UTC</createdTime>
+<ownerDesignName>combine</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<importedID>FDE2ED6B-4531-8A77-D25E-4A2F7E03CF69</importedID>
+<engineerTo>
+<item key="E5B38EE0-DA46-42B9-48DD-4CCE0C95A07A" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>87693BB5-29EF-F63F-CF49-DE0FC9D13D62</attributeRef>
+<attributeRef>834C4D2E-8770-56D7-A768-DCE5783760A6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

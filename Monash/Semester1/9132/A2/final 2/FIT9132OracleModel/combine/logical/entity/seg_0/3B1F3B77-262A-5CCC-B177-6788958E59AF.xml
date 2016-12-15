@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3B1F3B77-262A-5CCC-B177-6788958E59AF" name="action">
+<createdBy>eggeek</createdBy>
+<createdTime>2016-05-25 13:06:09 UTC</createdTime>
+<ownerDesignName>combine</ownerDesignName>
+<importedID>B93C4B4D-B0F4-3428-B629-1484D1826110</importedID>
+<engineerTo>
+<item key="E5B38EE0-DA46-42B9-48DD-4CCE0C95A07A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="action_id" id="A14A5AD9-E6EC-47E3-1C9F-FD8E018D6362">
+<createdBy>eggeek</createdBy>
+<createdTime>2016-05-25 13:06:09 UTC</createdTime>
+<ownerDesignName>combine</ownerDesignName>
+<importedID>C7B52AC1-9343-46C1-0383-92D72D75908C</importedID>
+<engineerTo>
+<item key="E5B38EE0-DA46-42B9-48DD-4CCE0C95A07A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>7</dataTypeScale>
+<ownDataTypeParameters>,,7</ownDataTypeParameters>
+</Attribute>
+<Attribute name="atype" id="A516529E-D5F7-31F5-DD15-C26E515EA3FC">
+<createdBy>eggeek</createdBy>
+<createdTime>2016-05-25 13:06:09 UTC</createdTime>
+<comment>the action type (Maintenance or repair)</comment>
+<ownerDesignName>combine</ownerDesignName>
+<importedID>E18714EE-6670-0DC4-31A7-AF5088ADE96A</importedID>
+<engineerTo>
+<item key="E5B38EE0-DA46-42B9-48DD-4CCE0C95A07A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8702A0F5-69EB-B937-ADA6-0579EC61CBC0" name="action_PK">
+<createdBy>eggeek</createdBy>
+<createdTime>2016-05-25 13:06:09 UTC</createdTime>
+<ownerDesignName>combine</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<importedID>50A6371A-6DAF-06A4-D60C-6C83EBECBB9C</importedID>
+<engineerTo>
+<item key="E5B38EE0-DA46-42B9-48DD-4CCE0C95A07A" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A14A5AD9-E6EC-47E3-1C9F-FD8E018D6362</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="05F8901A-0FAF-9B92-ACA3-A95B17882B82" name="action__UN">
+<createdBy>eggeek</createdBy>
+<createdTime>2016-05-26 05:22:22 UTC</createdTime>
+<generatorID>4791A8C6-6DC1-3D41-0C06-472CB53089A9</generatorID>
+<ownerDesignName>combine</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="E5B38EE0-DA46-42B9-48DD-4CCE0C95A07A" value="false"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>A516529E-D5F7-31F5-DD15-C26E515EA3FC</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

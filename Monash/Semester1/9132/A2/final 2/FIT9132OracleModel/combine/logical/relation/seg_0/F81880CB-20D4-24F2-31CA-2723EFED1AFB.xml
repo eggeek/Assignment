@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="booking_official_FK" directorySegmentName="seg_0" id="F81880CB-20D4-24F2-31CA-2723EFED1AFB">
+<createdBy>eggeek</createdBy>
+<createdTime>2016-05-25 13:06:09 UTC</createdTime>
+<ownerDesignName>combine</ownerDesignName>
+<importedID>39612B62-4BC2-8DA3-39DF-220C70834433</importedID>
+<engineerTo>
+<item key="E5B38EE0-DA46-42B9-48DD-4CCE0C95A07A" value="true"/>
+</engineerTo>
+<sourcePk>2017C38D-7BDB-C8C0-4799-A73203887626</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>4701CC8B-A25B-8C4D-C03E-6CCA401A7F7B</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>C4B36A0B-467F-4893-FDA2-D1D2D5A11CFB</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

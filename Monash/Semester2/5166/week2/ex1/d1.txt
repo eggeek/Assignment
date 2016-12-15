@@ -1,0 +1,5 @@
+This unit will provide an introduction to the principles and
+concepts of database systems their organisation and
+management. The issues of physical and logical data
+description are addressed. Various data models, and a
+query language, are introduced.

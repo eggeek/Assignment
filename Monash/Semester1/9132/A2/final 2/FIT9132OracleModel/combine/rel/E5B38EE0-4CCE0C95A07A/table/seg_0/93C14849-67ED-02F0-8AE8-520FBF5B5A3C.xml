@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="93C14849-67ED-02F0-8AE8-520FBF5B5A3C" name="official">
+<createdBy>eggeek</createdBy>
+<createdTime>2016-05-25 13:06:09 UTC</createdTime>
+<generatorID>4701CC8B-A25B-8C4D-C03E-6CCA401A7F7B</generatorID>
+<ownerDesignName>combine</ownerDesignName>
+<importedID>354E0400-E7F2-37DC-870E-B996273A1FFE</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="olympic_id" id="34C568A7-96BE-8094-7E44-A0F83F63CB11">
+<createdBy>eggeek</createdBy>
+<createdTime>2016-05-25 13:06:09 UTC</createdTime>
+<comment>the official&apos;s Olympic ID (8 characters), primary key</comment>
+<generatorID>E1286442-A50F-8666-3A4D-4F165C0CBFB2</generatorID>
+<ownerDesignName>combine</ownerDesignName>
+<importedID>445F81C5-BEF4-D9BE-1CF3-820759BE9722</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="first_name" id="44761F38-77B0-D684-E5E1-42F007D4B869">
+<createdBy>eggeek</createdBy>
+<createdTime>2016-05-25 13:06:09 UTC</createdTime>
+<comment>official&apos;s first name</comment>
+<generatorID>5D63EFEA-1DA9-A214-EDED-C1F6424DD84A</generatorID>
+<ownerDesignName>combine</ownerDesignName>
+<importedID>240B534C-3D2C-0B93-13EA-E8D3F2807461</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="last_name" id="4B5E2DBE-5521-2591-8463-30CAD034F1ED">
+<createdBy>eggeek</createdBy>
+<createdTime>2016-05-25 13:06:09 UTC</createdTime>
+<comment>official&apos;s last name</comment>
+<generatorID>C83E0841-77A3-057D-2643-93F187974B60</generatorID>
+<ownerDesignName>combine</ownerDesignName>
+<importedID>2BB49269-A926-85A9-1274-FF84BDF5411B</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="role" id="C480F09C-0B09-FE17-2F41-8D8C01F98792">
+<createdBy>eggeek</createdBy>
+<createdTime>2016-05-25 13:06:09 UTC</createdTime>
+<comment>description of the official</comment>
+<generatorID>7AC7838F-41E5-4C35-4132-2F8D7CE82F5D</generatorID>
+<ownerDesignName>combine</ownerDesignName>
+<importedID>759101E8-3EC5-28C5-75F8-84696847DA3B</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B2F9030D-1105-B786-7E03-9CDC1C68D829" name="official_PK">
+<createdBy>eggeek</createdBy>
+<createdTime>2016-05-25 13:06:09 UTC</createdTime>
+<generatorID>2017C38D-7BDB-C8C0-4799-A73203887626</generatorID>
+<ownerDesignName>combine</ownerDesignName>
+<importedID>7E289310-8DA9-7B2D-DAF4-2F2F39008690</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="34C568A7-96BE-8094-7E44-A0F83F63CB11"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

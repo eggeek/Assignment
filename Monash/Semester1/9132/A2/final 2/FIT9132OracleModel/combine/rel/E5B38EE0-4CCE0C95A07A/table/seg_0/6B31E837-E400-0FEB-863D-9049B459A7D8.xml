@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6B31E837-E400-0FEB-863D-9049B459A7D8" name="action">
+<createdBy>eggeek</createdBy>
+<createdTime>2016-05-25 13:06:09 UTC</createdTime>
+<generatorID>3B1F3B77-262A-5CCC-B177-6788958E59AF</generatorID>
+<ownerDesignName>combine</ownerDesignName>
+<importedID>D52ECA58-0886-E7D6-1FC6-F17C7A9A96DF</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="action_id" id="480B092B-470D-2685-2DE3-38F56E58EC35">
+<createdBy>eggeek</createdBy>
+<createdTime>2016-05-25 13:06:09 UTC</createdTime>
+<generatorID>A14A5AD9-E6EC-47E3-1C9F-FD8E018D6362</generatorID>
+<ownerDesignName>combine</ownerDesignName>
+<importedID>EA9D7710-6DDA-B5EB-7C9B-9E605409CF77</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>7</dataTypeScale>
+<ownDataTypeParameters>,,7</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementGenerateTrigger>false</autoIncrementGenerateTrigger>
+</Column>
+<Column name="atype" id="264AF881-F1B1-D8DB-5129-C3D3FEFB05F8">
+<createdBy>eggeek</createdBy>
+<createdTime>2016-05-25 13:06:09 UTC</createdTime>
+<comment>the action type (Maintenance or repair)</comment>
+<generatorID>A516529E-D5F7-31F5-DD15-C26E515EA3FC</generatorID>
+<ownerDesignName>combine</ownerDesignName>
+<importedID>1DD6B95B-9F9A-E71D-DD43-CD0083A8159A</importedID>
+<constraintName>chk_atype</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Oracle Database 11g" definition="atype in (&apos;maintenance&apos;, &apos;repair&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4DD8090B-982C-E954-3C8F-ECDBE567BE18" name="action_PK">
+<createdBy>eggeek</createdBy>
+<createdTime>2016-05-25 13:06:09 UTC</createdTime>
+<generatorID>8702A0F5-69EB-B937-ADA6-0579EC61CBC0</generatorID>
+<ownerDesignName>combine</ownerDesignName>
+<importedID>78BF4B9A-CB51-B502-AB9C-3C4F0321295C</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="480B092B-470D-2685-2DE3-38F56E58EC35"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4791A8C6-6DC1-3D41-0C06-472CB53089A9" name="action__UN">
+<createdBy>eggeek</createdBy>
+<createdTime>2016-05-26 00:34:13 UTC</createdTime>
+<ownerDesignName>combine</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="264AF881-F1B1-D8DB-5129-C3D3FEFB05F8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,8 @@
+szha414@student.monash.edu
+myemail#gmail.com
+wrong@email
+http://my.monash/wes?id=1
+http://my.monash/student.html
+https://my.monash
+https:\\wrong.url
+192.168.0.1

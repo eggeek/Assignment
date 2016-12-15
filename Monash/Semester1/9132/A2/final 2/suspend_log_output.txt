@@ -1,0 +1,57 @@
+SQL> --- prepare test ---
+SQL> --- Insert 3 test drivers ---
+SQL> --- insert alice ---
+SQL> insert into driver values (Driver_driver_id_SEQ.nextval, 'alice', 'one', '111111', sysdate, 1, 'yes', 0);
+
+1 row inserted.
+
+SQL> --- insert bob ---
+SQL> insert into driver values (Driver_driver_id_SEQ.nextval, 'bob', 'two', '222222', sysdate, 1, 'yes', 0);
+
+1 row inserted.
+
+SQL> --- insert cat ---
+SQL> insert into driver values (Driver_driver_id_SEQ.nextval, 'cat', 'three', '333333', sysdate, 1, 'yes', 0);
+
+1 row inserted.
+
+SQL> --- before update ---
+SQL> select LOG_DATETIME as datetime, LOG_USER as "USER", LOG_CONTENT as CONTENT from driver_audit;
+
+no rows selected
+
+
+SQL> --- updating ---
+SQL> --- alice availability become 'sus' ---
+SQL> update driver
+  set availability = 'sus'
+  where lincence_number = '111111';
+
+1 row updated.
+
+SQL> --- bob availability become 'no' ---
+SQL> update driver
+  set availability = 'no'
+  where lincence_number = '222222';
+
+1 row updated.
+
+SQL> --- after update ---
+SQL> select LOG_DATETIME as "TIME", LOG_USER as "USER", LOG_CONTENT as "DETAIL" from driver_audit;
+
+TIME      USER
+--------- ------------------------------
+DETAIL                                                                                                                                               
+------------------------------------------------------------------------------------------------------------------------------------------------------
+27-MAY-16 SZHA414                        
+suspended driver, id: 4                                                                                                                               
+
+
+SQL> --- total rows in LOG ---
+SQL> select count(*) from DRIVER_AUDIT;
+
+  COUNT(*)
+----------
+         1
+
+SQL> spool off

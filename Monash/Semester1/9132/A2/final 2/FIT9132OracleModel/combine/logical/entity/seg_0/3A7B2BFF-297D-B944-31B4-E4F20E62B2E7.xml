@@ -1,0 +1,178 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3A7B2BFF-297D-B944-31B4-E4F20E62B2E7" name="Driver">
+<createdBy>eggeek</createdBy>
+<createdTime>2016-05-25 13:06:09 UTC</createdTime>
+<ownerDesignName>combine</ownerDesignName>
+<importedID>17016D1C-FAFE-DE9B-B334-37D6DAA2F3B5</importedID>
+<engineerTo>
+<item key="E5B38EE0-DA46-42B9-48DD-4CCE0C95A07A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="driver_id" id="0378A9EF-F823-5C3A-51F4-B46F0EB34CE9">
+<createdBy>eggeek</createdBy>
+<createdTime>2016-05-25 13:06:09 UTC</createdTime>
+<comment>driver ID as the primary key of this table</comment>
+<ownerDesignName>combine</ownerDesignName>
+<importedID>51EBA489-32FD-6C16-6E5C-FD3315506A67</importedID>
+<engineerTo>
+<item key="E5B38EE0-DA46-42B9-48DD-4CCE0C95A07A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>5</dataTypeScale>
+<ownDataTypeParameters>,,5</ownDataTypeParameters>
+</Attribute>
+<Attribute name="first_name" id="43D2D515-7B1B-9870-C3FB-1C91736D5C4D">
+<createdBy>eggeek</createdBy>
+<createdTime>2016-05-25 13:06:09 UTC</createdTime>
+<comment>input driver&apos;s first name</comment>
+<ownerDesignName>combine</ownerDesignName>
+<importedID>2CB6D6A5-7DB5-D8B4-0DFE-68861829A14F</importedID>
+<engineerTo>
+<item key="E5B38EE0-DA46-42B9-48DD-4CCE0C95A07A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="last_name" id="867B53E2-28F2-D778-C5DD-9B6C54B443EC">
+<createdBy>eggeek</createdBy>
+<createdTime>2016-05-25 13:06:09 UTC</createdTime>
+<comment>input driver&apos;s last name</comment>
+<ownerDesignName>combine</ownerDesignName>
+<importedID>A33548D8-336D-0FC6-FAE1-0A030B19E338</importedID>
+<engineerTo>
+<item key="E5B38EE0-DA46-42B9-48DD-4CCE0C95A07A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="lincence_number" id="961BDEBE-FB2C-93D4-E6E0-016D97493149">
+<createdBy>eggeek</createdBy>
+<createdTime>2016-05-25 13:06:09 UTC</createdTime>
+<comment>driver&apos;s licence number</comment>
+<ownerDesignName>combine</ownerDesignName>
+<importedID>EDFE874E-64CE-8CF4-B690-3D7F3D092781</importedID>
+<engineerTo>
+<item key="E5B38EE0-DA46-42B9-48DD-4CCE0C95A07A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>18</dataTypeSize>
+<ownDataTypeParameters>18,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="date_of_birth" id="13D5D3E9-B915-77DB-5997-F1758C4C2DE0">
+<createdBy>eggeek</createdBy>
+<createdTime>2016-05-25 13:06:09 UTC</createdTime>
+<comment>driver&apos;s date of birth</comment>
+<ownerDesignName>combine</ownerDesignName>
+<importedID>33B8EDD2-39C3-9EC1-8563-F3A7CAA9E30A</importedID>
+<engineerTo>
+<item key="E5B38EE0-DA46-42B9-48DD-4CCE0C95A07A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="clearance_level" id="AB161860-4D2A-FB39-ACE6-F8E01C007D7E">
+<createdBy>eggeek</createdBy>
+<createdTime>2016-05-25 13:06:09 UTC</createdTime>
+<comment>driver&apos;s clearance level from 1- 4</comment>
+<ownerDesignName>combine</ownerDesignName>
+<importedID>935BEF5B-FAE2-6489-87F6-00886E904625</importedID>
+<engineerTo>
+<item key="E5B38EE0-DA46-42B9-48DD-4CCE0C95A07A" value="true"/>
+</engineerTo>
+<constraintName>chk_clearance_level</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>6</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Oracle Database 11g" definition="clearance_level between 1 and 4"/>
+</checkConstraint>
+<defaultValue>1</defaultValue>
+<ownDataTypeParameters>,,6</ownDataTypeParameters>
+</Attribute>
+<Attribute name="availibility" id="F1DF2E9C-2245-CBB7-F1A6-8A3918DA5615">
+<createdBy>eggeek</createdBy>
+<createdTime>2016-05-25 13:06:09 UTC</createdTime>
+<comment>availibility - &apos;yes&apos;, &apos;no&apos; or &apos;sus&apos;(suspended)  values only</comment>
+<ownerDesignName>combine</ownerDesignName>
+<importedID>AF84B9B2-2620-A1C3-0CD9-FD41E0AC1F27</importedID>
+<engineerTo>
+<item key="E5B38EE0-DA46-42B9-48DD-4CCE0C95A07A" value="true"/>
+</engineerTo>
+<constraintName>chk_availibility</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Oracle Database 11g" definition="availibility in (&apos;yes&apos;, &apos;no&apos;, &apos;sus&apos;)"/>
+</checkConstraint>
+<defaultValue>&apos;yes&apos;</defaultValue>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="qualifications_count" id="BB0D4183-9E79-FB32-D9B4-FAC043023796">
+<createdBy>eggeek</createdBy>
+<createdTime>2016-05-25 13:06:09 UTC</createdTime>
+<comment>number of qualifications count</comment>
+<ownerDesignName>combine</ownerDesignName>
+<importedID>EE209CB3-988C-E05D-BF30-9F43AFCB072B</importedID>
+<engineerTo>
+<item key="E5B38EE0-DA46-42B9-48DD-4CCE0C95A07A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,,2</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C3963396-F7AD-8B9F-0A18-D62337C128AC" name="Driver_PK">
+<createdBy>eggeek</createdBy>
+<createdTime>2016-05-25 13:06:09 UTC</createdTime>
+<ownerDesignName>combine</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<importedID>08D17E1E-410E-B9E3-C9EE-439FBC2ADD70</importedID>
+<engineerTo>
+<item key="E5B38EE0-DA46-42B9-48DD-4CCE0C95A07A" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0378A9EF-F823-5C3A-51F4-B46F0EB34CE9</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="D4C7537C-E361-3358-1D3B-C08369AB3AF4" name="lincence__UN">
+<createdBy>eggeek</createdBy>
+<createdTime>2016-05-26 05:22:22 UTC</createdTime>
+<generatorID>34C3D662-624F-E6ED-B124-8F7CF101C52B</generatorID>
+<ownerDesignName>combine</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="E5B38EE0-DA46-42B9-48DD-4CCE0C95A07A" value="false"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>961BDEBE-FB2C-93D4-E6E0-016D97493149</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

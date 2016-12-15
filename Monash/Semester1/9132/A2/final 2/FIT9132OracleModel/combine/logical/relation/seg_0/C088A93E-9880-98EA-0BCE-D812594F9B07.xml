@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="qualifi_courses_FK" directorySegmentName="seg_0" id="C088A93E-9880-98EA-0BCE-D812594F9B07">
+<createdBy>eggeek</createdBy>
+<createdTime>2016-05-25 13:06:09 UTC</createdTime>
+<ownerDesignName>combine</ownerDesignName>
+<importedID>F71EAB13-0F3B-DD77-934D-4EA28BA3958B</importedID>
+<engineerTo>
+<item key="E5B38EE0-DA46-42B9-48DD-4CCE0C95A07A" value="true"/>
+</engineerTo>
+<sourcePk>DA2AF5C8-040E-517A-6753-55ECE341A3E4</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>7E43C98D-2059-B9C7-8E76-287BB6E1EA32</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>C268B7AB-7676-DC40-517F-73619DE3D4A2</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

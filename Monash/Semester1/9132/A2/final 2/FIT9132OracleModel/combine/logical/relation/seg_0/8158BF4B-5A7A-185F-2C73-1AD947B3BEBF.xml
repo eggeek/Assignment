@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="action_vehicle_FK" directorySegmentName="seg_0" id="8158BF4B-5A7A-185F-2C73-1AD947B3BEBF">
+<createdBy>eggeek</createdBy>
+<createdTime>2016-05-25 13:06:09 UTC</createdTime>
+<ownerDesignName>combine</ownerDesignName>
+<importedID>FF914960-C556-7144-91FA-0066ACE59653</importedID>
+<engineerTo>
+<item key="E5B38EE0-DA46-42B9-48DD-4CCE0C95A07A" value="true"/>
+</engineerTo>
+<sourcePk>E248A401-62B3-3DE4-3926-B81C3FD123C5</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>has</nameOnSource>
+<nameOnTarget>record</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>F123E006-CD6D-F34D-8AF1-1B977F74EBE1</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>C26A25C5-357A-4BC7-9750-73463CB9E8AF</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0C350AC5-94C5-767C-6E8C-9E2ECBE0FD19" name="vehicle_action_records">
+<createdBy>eggeek</createdBy>
+<createdTime>2016-05-25 13:06:09 UTC</createdTime>
+<generatorID>C26A25C5-357A-4BC7-9750-73463CB9E8AF</generatorID>
+<ownerDesignName>combine</ownerDesignName>
+<importedID>3FE71838-D825-C538-D604-C30B4F3937D8</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="before_odometer" id="17146248-209C-115A-34FE-056D560DF349">
+<createdBy>eggeek</createdBy>
+<createdTime>2016-05-25 13:06:09 UTC</createdTime>
+<generatorID>23C40C9A-941B-64BC-DA34-95FB139CBA08</generatorID>
+<ownerDesignName>combine</ownerDesignName>
+<importedID>21BA6924-DAEB-865B-48B1-58FD8A5723AD</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,10</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="after_odometer" id="DA426E13-842B-F24E-E89A-D83D375C34FD">
+<createdBy>eggeek</createdBy>
+<createdTime>2016-05-25 13:06:09 UTC</createdTime>
+<generatorID>63681C6D-E158-C71B-057E-35A1E713447A</generatorID>
+<ownerDesignName>combine</ownerDesignName>
+<importedID>391B2049-EAF2-1AC2-5C45-3F9F8C26582E</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,10</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vehicle_vin" id="82CB2087-D93D-F01B-47A9-C61651EDB1D1">
+<createdBy>eggeek</createdBy>
+<createdTime>2016-05-25 13:06:09 UTC</createdTime>
+<generatorID>8B0BCB6F-6F23-670D-5D9E-2CEE0FD4E671</generatorID>
+<ownerDesignName>combine</ownerDesignName>
+<importedID>4D5FBB61-54A3-C153-990B-7C32C8D182CA</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FB3F2081-5E3E-21DC-8C83-556F7CB4D3F8" referredColumn="3F4B1DD3-CE84-1376-0A20-4A5A040077D5"/>
+</associations>
+</Column>
+<Column name="action_id" id="A3CA8F3D-9992-D2BE-DDCC-6188ED9E130A">
+<createdBy>eggeek</createdBy>
+<createdTime>2016-05-25 13:06:09 UTC</createdTime>
+<generatorID>046D1598-3111-FC82-33B5-CE4132C3D305</generatorID>
+<ownerDesignName>combine</ownerDesignName>
+<importedID>CC67CA9C-A190-E8C1-4DEB-ED320D8C0495</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>7</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="52706A96-2320-B49E-39B1-880B20DA2031" referredColumn="480B092B-470D-2685-2DE3-38F56E58EC35"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="27FD0058-F9E7-BD39-4C2C-82ABA1A03AC9" name="vehicle_action_records_PK">
+<createdBy>eggeek</createdBy>
+<createdTime>2016-05-25 13:06:09 UTC</createdTime>
+<generatorID>747F5E25-4065-E31C-2F85-23976F97EE28</generatorID>
+<ownerDesignName>combine</ownerDesignName>
+<importedID>65ED562E-CA26-6682-B5E2-A09834685B6C</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="82CB2087-D93D-F01B-47A9-C61651EDB1D1"/>
+<colUsage columnID="A3CA8F3D-9992-D2BE-DDCC-6188ED9E130A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EAC79F55-3B29-E2F0-3B5E-6BDC498F7179" name="vehicle_action_FK">
+<createdBy>eggeek</createdBy>
+<createdTime>2016-05-25 13:06:09 UTC</createdTime>
+<generatorID>4A635097-E2D5-1D0C-0192-A305DA51FAEB</generatorID>
+<ownerDesignName>combine</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A3CA8F3D-9992-D2BE-DDCC-6188ED9E130A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="56B39413-4A94-667B-A7AB-0F296D4E5EE6" name="action_vehicle_FK">
+<createdBy>eggeek</createdBy>
+<createdTime>2016-05-25 13:06:09 UTC</createdTime>
+<generatorID>FF914960-C556-7144-91FA-0066ACE59653</generatorID>
+<ownerDesignName>combine</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="82CB2087-D93D-F01B-47A9-C61651EDB1D1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

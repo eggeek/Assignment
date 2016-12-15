@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="41FA2C02-9085-3533-0576-2B6AD52E4F72" containerWithKeyObject="DB40F7AA-7109-A075-BB4E-9841FF7BDAD8" localFKIndex="F96E7F16-727D-BD4E-F6BE-F3F1530C5B78" name="qualifi_driver_FK">
+<createdBy>eggeek</createdBy>
+<createdTime>2016-05-25 13:06:09 UTC</createdTime>
+<generatorID>297B0B04-E06A-A322-8804-BCB06CF6C4FD</generatorID>
+<ownerDesignName>combine</ownerDesignName>
+<importedID>BA13EB8E-CF49-CF0E-5E45-51EF8F06A26C</importedID>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>2FBD0606-19B6-DB0B-DE07-188E82C37D1E</referredTableID>
+<keyObject>00418F85-FF0C-2F82-9BF7-5FCE2A418925</keyObject>
+<referredKeyID>00418F85-FF0C-2F82-9BF7-5FCE2A418925</referredKeyID>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

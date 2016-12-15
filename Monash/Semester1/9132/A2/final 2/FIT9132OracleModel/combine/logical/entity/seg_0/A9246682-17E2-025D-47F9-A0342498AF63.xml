@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A9246682-17E2-025D-47F9-A0342498AF63" name="language_code">
+<createdBy>eggeek</createdBy>
+<createdTime>2016-05-25 13:06:09 UTC</createdTime>
+<ownerDesignName>combine</ownerDesignName>
+<importedID>89BFEACE-1449-943F-2B65-A13A6E10ED48</importedID>
+<engineerTo>
+<item key="E5B38EE0-DA46-42B9-48DD-4CCE0C95A07A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ISO6931_code" id="3C7A55E3-07DA-F113-FAF7-21B865F2D4C3">
+<createdBy>eggeek</createdBy>
+<createdTime>2016-05-25 13:06:09 UTC</createdTime>
+<comment>iso6931 code as primary key</comment>
+<ownerDesignName>combine</ownerDesignName>
+<importedID>D888F867-1D94-2763-A663-F2E02E540EBA</importedID>
+<engineerTo>
+<item key="E5B38EE0-DA46-42B9-48DD-4CCE0C95A07A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="language" id="DF6AA121-DCE7-1160-E772-DA70939777DD">
+<createdBy>eggeek</createdBy>
+<createdTime>2016-05-25 13:06:09 UTC</createdTime>
+<comment>language name</comment>
+<ownerDesignName>combine</ownerDesignName>
+<importedID>F049AA2E-739C-E94A-AC6D-34437811C6C4</importedID>
+<engineerTo>
+<item key="E5B38EE0-DA46-42B9-48DD-4CCE0C95A07A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9393B450-D2CB-3085-69CE-FBFD8ADCDF63" name="language_code_PK">
+<createdBy>eggeek</createdBy>
+<createdTime>2016-05-25 13:06:09 UTC</createdTime>
+<ownerDesignName>combine</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<importedID>F408EE54-30A3-80A9-3E0B-A67A9C3C6F04</importedID>
+<engineerTo>
+<item key="E5B38EE0-DA46-42B9-48DD-4CCE0C95A07A" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3C7A55E3-07DA-F113-FAF7-21B865F2D4C3</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="F1215678-DA87-1979-88C9-57715EDBAE0E" name="language_code__UN">
+<createdBy>eggeek</createdBy>
+<createdTime>2016-05-26 05:22:22 UTC</createdTime>
+<generatorID>01EB9A76-4141-064F-B5A5-0C7FA040F3C6</generatorID>
+<ownerDesignName>combine</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="E5B38EE0-DA46-42B9-48DD-4CCE0C95A07A" value="false"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>DF6AA121-DCE7-1160-E772-DA70939777DD</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

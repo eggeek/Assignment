@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="languages_official_FK" directorySegmentName="seg_0" id="530FC004-6FC9-16C5-CABA-AE23198CF385">
+<createdBy>eggeek</createdBy>
+<createdTime>2016-05-25 13:06:09 UTC</createdTime>
+<ownerDesignName>combine</ownerDesignName>
+<importedID>124EA59E-EDC0-0460-8CB1-CA945F43A256</importedID>
+<engineerTo>
+<item key="E5B38EE0-DA46-42B9-48DD-4CCE0C95A07A" value="true"/>
+</engineerTo>
+<sourcePk>2017C38D-7BDB-C8C0-4799-A73203887626</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>4701CC8B-A25B-8C4D-C03E-6CCA401A7F7B</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>AFAFFE13-06E0-56D7-AB51-961AD4827FB5</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
