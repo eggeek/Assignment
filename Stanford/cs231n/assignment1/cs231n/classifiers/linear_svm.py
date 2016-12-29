@@ -67,7 +67,6 @@ def svm_loss_vectorized(W, X, y, reg):
 
   Inputs and outputs are the same as svm_loss_naive.
   """
-  num_train = X.shape[0]
   loss = 0.0
   dW = np.zeros(W.shape) # initialize the gradient as zero
 
@@ -78,11 +77,9 @@ def svm_loss_vectorized(W, X, y, reg):
   #############################################################################
   scores = X.dot(W)
   deltas = np.ones(scores.shape)
-  # correct = np.multiply(np.ones(scores.shape), scores[np.arange(0, scores.shape[0]),
-  #  y].reshape(scores.shape[0], 1))
-  correct = scores[np.arange(num_train), y].reshape((1, num_train))
-  L = scores - correct.T + deltas
-  L[np.arange(num_train), y] = 0
+  correct = np.multiply(np.ones(scores.shape), scores[np.arange(0, scores.shape[0]),
+    y].reshape(scores.shape[0], 1))
+  L = scores - correct + deltas
   L[L < 0] = 0
   loss = np.sum(L)
   loss /= X.shape[0]
