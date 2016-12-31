@@ -22,18 +22,32 @@ def softmax_loss_naive(W, X, y, reg):
   # Initialize the loss and gradient to zero.
   loss = 0.0
   dW = np.zeros_like(W)
+  N = X.shape[0]
+  C = W.shape[1]
 
+  f = X.dot(W)
+  # r: (N, 1)
+  r = np.sum(np.power(np.e, f), axis=1)
   #############################################################################
   # TODO: Compute the softmax loss and its gradient using explicit loops.     #
   # Store the loss in loss and the gradient in dW. If you are not careful     #
   # here, it is easy to run into numeric instability. Don't forget the        #
   # regularization!                                                           #
   #############################################################################
-  pass
+  for i in xrange(N):
+    Li = -f[i, y[i]] + np.log(np.sum(np.power(np.e, f[i, :])))
+    loss += Li
+    dW[:, y[i]] -= X[i]
+  for i in xrange(C):
+    for k in xrange(N):
+      dW[:, i] += np.power(np.e, f[k, i]) / r[k] * X[k]
   #############################################################################
   #                          END OF YOUR CODE                                 #
   #############################################################################
-
+  loss /= N
+  loss += 0.5 * reg * np.sum(W * W)
+  dW /= N
+  dW += reg * W
   return loss, dW
 
 
@@ -53,7 +67,28 @@ def softmax_loss_vectorized(W, X, y, reg):
   # here, it is easy to run into numeric instability. Don't forget the        #
   # regularization!                                                           #
   #############################################################################
-  pass
+  N = X.shape[0]
+  C = W.shape[1]
+  f = X.dot(W)
+  epf = np.power(np.e, f)
+
+  # loss calculation
+  # loss = -np.sum(f[np.arange(N), y]) + np.log(np.sum(epf))
+  loss = -np.sum(f[np.arange(N), y]) + np.sum(np.log(np.sum(epf, axis=1)))
+  loss /= N
+  loss += 0.5 * reg * np.sum(W ** 2)
+
+  # dW calculation
+  t = np.zeros((N, C))
+  t[np.arange(N), y] = 1
+  # t.T.dot(X) is sum of X, group by classes
+  dW -= t.T.dot(X).T
+  # dW: sum of log
+  r = np.sum(epf, axis=1)
+  t = np.divide(epf, r.reshape(N, 1))
+  dW += X.T.dot(t)
+  dW /= N
+  dW += reg * W
   #############################################################################
   #                          END OF YOUR CODE                                 #
   #############################################################################
