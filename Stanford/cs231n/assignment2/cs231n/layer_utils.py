@@ -2,6 +2,22 @@ from cs231n.layers import *
 from cs231n.fast_layers import *
 
 
+def affine_batchnorm_relu_forward(x, w, b, gamma, beta, bn_param):
+  a_out, fc_cache = affine_forward(x, w, b)
+  bn_out, bn_cache = batchnorm_forward(a_out, gamma, beta, bn_param)
+  out, relu_cache = relu_forward(bn_out)
+  cache = (fc_cache, bn_cache, relu_cache)
+  return out, cache
+
+
+def affine_batchnorm_relu_backward(dout, cache):
+  fc_cache, bn_cache, relu_cache = cache
+  dout = relu_backward(dout, relu_cache)
+  dx, dgamma, dbeta = batchnorm_backward(dout, bn_cache)
+  dx, dw, db = affine_backward(dx, fc_cache)
+  return dx, dw, db, dgamma, dbeta
+
+
 def affine_relu_forward(x, w, b):
   """
   Convenience layer that perorms an affine transform followed by a ReLU
@@ -40,7 +56,7 @@ def conv_relu_forward(x, w, b, conv_param):
   Inputs:
   - x: Input to the convolutional layer
   - w, b, conv_param: Weights and parameters for the convolutional layer
-  
+
   Returns a tuple of:
   - out: Output from the ReLU
   - cache: Object to give to the backward pass
