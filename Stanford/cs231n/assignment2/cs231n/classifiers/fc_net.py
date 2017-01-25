@@ -229,7 +229,7 @@ class FullyConnectedNet(object):
       self.dropout_param['mode'] = mode
     if self.use_batchnorm:
       for bn_param in self.bn_params:
-        bn_param[mode] = mode
+        bn_param['mode'] = mode
 
     scores = None
     caches = {}
@@ -259,6 +259,9 @@ class FullyConnectedNet(object):
         cache['batchnorm'] = bn_cache
       out, relu_cache = relu_forward(out)
       cache['relu'] = relu_cache
+      if self.use_dropout:
+        out, drop_cache = dropout_forward(out, self.dropout_param)
+        cache['dropout'] = drop_cache
       caches[i] = cache
     # last layer
     w = self.params['W%d' % self.num_layers]
@@ -293,6 +296,8 @@ class FullyConnectedNet(object):
       if i == self.num_layers:
         dx, dw, db = affine_backward(dx, caches[self.num_layers]['affine'])
       else:
+        if self.use_dropout:
+          dx = dropout_backward(dx, caches[i]['dropout'])
         dx = relu_backward(dx, caches[i]['relu'])
         if self.use_batchnorm:
           dx, dgamma, dbeta = batchnorm_backward(dx, caches[i]['batchnorm'])
